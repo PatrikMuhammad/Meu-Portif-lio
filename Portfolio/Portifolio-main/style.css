@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+/* *:root{
+    --
+} */
 *{
     margin: 0;
     padding: 0;
@@ -31,16 +34,16 @@ html{
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+.navbar .logo{
     color: #fff;
     font-size: 35px;
     font-weight: 500;
 }
-.navbar .logo a span{
+.navbar .logo span{
     color: #00804b;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+.navbar.sticky .logo span{
     color: #fff;
 }
 .navbar .menu li{
@@ -238,7 +241,7 @@ section .title::after{
 .services .title::after,
 .projetos .title::after{
     background: #111;
-    content: "Que oferecemos";
+    content: "Que ofereço";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -330,17 +333,17 @@ section .title::after{
 .skills .skills-content .right .html::before{
     width: 93%;
 }
-.skills .skills-content .right .css::before{
+.skills .skills-content .right .python::before{
     width: 85%;
 }
-.skills .skills-content .right .js::before{
-    width: 87%;
+.skills .skills-content .right .css::before{
+    width: 45%;
 }
 .skills .skills-content .right .php::before{
     width: 47%;
 }
 .skills .skills-content .right .mysql::before{
-    width: 42%;
+    width: 93%;
 }
 /*  sessão equipe  */
 .projetos .title::after{
@@ -616,3 +619,40 @@ footer span a:hover{
         font-size: 27px;
     }
 }
+
+/* animacao do cursor */
+/* 
+.cursor{
+    z-index: 999;   
+    position: absolute; 
+    background: #00804b;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #00804b, 
+                0 0 60px #00804b, 
+                0 0 100px #00804b;
+            animation: colors 5s infinite;
+    display: none;
+}
+
+@keyframes colors{
+    0%{
+        filter: hue-rotate(90deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before{
+    content: "";
+    position: absolute;
+    background: #00804b;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, 30%);
+    border-radius: 50%;
+} */
