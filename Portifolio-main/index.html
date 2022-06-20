@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Patrik Muhammad</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo">Patrik<span>Muhammad</span></div>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#skills">Especialidade</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+    <!--home inicio-->
+    <section class="home" id="home">
+        <div class="cursor"></div>
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Ola, meu nome é</div>
+                <div class="text-2">Patrik Muhammad</div>
+                <div class="text-3">eu sou <span class="typing"></span></div>
+                <div class="container-negocinho">
+                    <div class="swapping-squares-spinner":style="spinner">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                </div>
+                <a href="#contact">Contratar-me</a>
+            </div>
+        </div>
+    </section>
+
+    <!--sessão sobre-->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Sobre</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="image/img-1.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Sou Patrik e sou <span class="typing-2"></span></div>
+                    <p>Tenho 19 anos, sou estudante da Fábrica de Software (Técnico em Desenvolvimento de Sistemas) no Senac Hub Academy desde julho de 2021,atualmente faço sites e apps personalizados sob encomenda do cliente.</p>
+                    <a href="currriculo/Curriculo.pdf" download="Curriculo.pdf" type="application/pdf">Visualizar CV</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--sessão serviços-->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Serviços</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                    <ion-icon name="brush-outline"></ion-icon>
+                    <div class="text">Desenvolvedor Web</div>
+                    <p>Faço sites dinâmicos com base no desejo do cliente</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                <div class="box">
+                    <ion-icon name="trending-up-outline"></ion-icon>
+                    <div class="text">DataBase Admistrator</div>
+                    <p>Construo e mantenho o banco de dados para apps ou sites</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <ion-icon name="code-outline"></ion-icon>
+                    <div class="text">Desenvolvedor de Apps</div>
+                    <p>Desenvolvo um app apartir do que o cliente deseja</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+        <!--sessão especialidade-->
+        <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Especialidades</h2>
+            <div class="container-spinner">
+                <div class="radar-spinner" :style="spinnerStyle">
+                    <div class="circle">
+                        <div class="circle-inner-container">
+                            <div class="circle-inner"></div>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-inner-container">
+                            <div class="circle-inner"></div>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-inner-container">
+                            <div class="circle-inner"></div>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle-inner-container">
+                            <div class="circle-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Minhas habilidades criativas e experiencias</div>
+                    <p>No período em que fiz a Fábrica de Software (Técnico em Desenvolvimento de Sistemas) no Senac Ms, participei de vários projetos e eventos alguns deles foram, construir um app desktop para controle de chaves no ambiente escolar do Senac Hub Academy que foi desenvolvido em Python,com a bliblioteca PyQT e utiliza o Sqlite para armazenamento dos dados, outro projeto foi construir do zero um 
+                        site de inscrições para a primeira edição do Hub Experiencê Day, foi feito com HTML5, CSS3, JavaScript.
+                        E um app web para controle de estoque da empresa Jera, foi desenvolvido em HTML5, CSS3, JavaScript e PHP.
+                    </p>
+                    <a href="#">Mais informações</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>93%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                    <div class="bars">
+                    <div class="info">
+                        <span>Python</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="line python"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Html</span>
+                        <span>87%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>CSS</span>
+                        <span>47%</span>
+                    </div>
+                    <div class="line css"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>PHP</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="line php"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--sessão equipe-->
+        <section class="projetos" id="projetos">
+        <div class="max-width">
+            <h2 class="title">Meus Projetos</h2>
+            <div class="carousel owl-carousel ">
+                <div class="card">
+                    <div class="box">
+                        <img src="image/img-1.jpg" alt="">
+                        <div class="text">hub-key</div>
+                        <p>Um app desktop para controle de chaves no ambiente escolar do Senac Hub Academy</p>
+                    </div>
+                </div>
+                <div class="card">
+                <div class="box">
+                    <img src="image/img-2.jpg" alt="">
+                    <div class="text">Jera</div>
+                    <p>App Web para gerenciamento de estoque e entrada e saida de brindes e equipamentos</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="image/img-3.jpg" alt="">
+                    <div class="text">Teste</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="image/img-4.jpg" alt="">
+                    <div class="text">Teste</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="image/img-5.jpg" alt="">
+                    <div class="text">Teste</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão contato-->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contato</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Fale Conosco</div>
+                    <p>Entre em contato comigo caso queira um site site personalizado para sua empresa,ou um app que tenha a sua identidade e seu diferencial.</p>
+                
+                <div class="icons">
+                    <div class="row">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Nome</div>
+                            <div class="sub-title">Patrik Muhammad Majeid</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <ion-icon name="earth-outline"></ion-icon>
+                    <div class="info">
+                        <div class="head">Endereço</div>
+                        <div class="sub-title">Campo Grande, MS</div>
+                    </div>
+                </div>
+                <div class="row">
+                <ion-icon name="person-outline"></ion-icon>
+                <div class="info">
+                    <div class="head">Email</div>
+                    <div class="sub-title">991294627p@gmail.com</div>
+                </div>
+            </div>
+                </div>
+            </div><!--column left-->
+            <div class="column rigth">
+                <div class="text">Mensagem</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <label for="nome" class="input-label">Nome</label>
+                            <input type="text" id="nome" required class="input">
+                        </div>
+                        <div class="field email">
+                            <label for="email" class="input-label">email</label>
+                            <input type="email" id="email" required class="input">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="field">
+                            <label for="sobrenome" class="input-label">sobrenome</label>
+                            <input type="text" id="sobrenome" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--sessão  footer-->
+    <footer>
+        <span>Criado por <a href="https://github.com/PatrikMuhammad">Patrik Muhammad</a> <a href="#"><ion-icon class="icon-linkedin" name="logo-linkedin"></ion-icon></a> | Todos os direitos reservado 2021</span>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+</body>
+</html>
