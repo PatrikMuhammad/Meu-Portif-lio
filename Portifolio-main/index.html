@@ -22,6 +22,7 @@
                 <li><a href="#skills">Especialidade</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
+                <li><a href="tela_login/index.php">Login</a></li>
             </ul>
             <div class="menu-btn">
                 <ion-icon name="menu-outline"></ion-icon>
@@ -260,24 +261,21 @@
                 <form action="#">
                     <div class="fields">
                         <div class="field name">
-                            <label for="nome" class="input-label">Nome</label>
-                            <input type="text" id="nome" required class="input">
+                            <input type="text" id="nome" placeholder="Nome" required class="input">
                         </div>
                         <div class="field email">
-                            <label for="email" class="input-label">email</label>
-                            <input type="email" id="email" required class="input">
+                            <input type="email" id="email" placeholder="Email" required class="input">
                         </div>
                     </div>
                     <div class="field">
                         <div class="field">
-                            <label for="sobrenome" class="input-label">sobrenome</label>
-                            <input type="text" id="sobrenome" required>
+                            <input type="text" id="sobrenome" placeholder="Sobrenome" required>
                         </div>
                         <div class="field textarea">
                             <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit">Enviar</button>
+                            <button onclick="exibir()" type="submit">Enviar</button>
                         </div>
                     </div>
                 </form>
