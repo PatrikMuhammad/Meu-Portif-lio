@@ -108,12 +108,26 @@ input:hover{
     height: calc(135px * 0.25 / 1.3);
     width: calc(135px * 0.25 / 1.3);
     animation-duration: 1000ms;
-
     border: calc(100px * 0.04 / 1.3) solid var(--verde-dcria);
     margin-right: auto;
     margin-left: auto;
     position: absolute;
     animation-iteration-count: infinite;
+}
+.container-negocinho:hover .swapping-squares-spinner .square:nth-child(1),
+.container-negocinho:hover .swapping-squares-spinner .square:nth-child(3){
+    /* border: calc(100px * 0.04 / 1.3) solid var(--verde-dcria); */
+    border: none;
+    background-color: var(--verde-dcria);
+    transform: rotate(180deg);
+
+}
+
+.container-negocinho:hover .swapping-squares-spinner .square:nth-child(2),
+.container-negocinho:hover .swapping-squares-spinner .square:nth-child(4){
+    background-color: var(--branquin-nice);
+    border: none;
+    transform: rotateX(180deg);
 }
 
 .container-negocinho .swapping-squares-spinner .square:nth-child(1){
@@ -134,4 +148,38 @@ input:hover{
 .container-negocinho .swapping-squares-spinner .square:nth-child(4){
     animation-name: swapping-squares-4;
     animation-delay: 0ms;
+}
+
+@keyframes swapping-squares-1{
+    50%{
+        transform: translate(150%,150%);
+        scale: (2,2);
+        background-color: transparent;
+    }
+}
+
+@keyframes swapping-squares-2{
+    50%{
+        transform: translate(-150%,150%);
+        scale: (2,2);
+        background-color: transparent;
+    }
+
+}
+
+@keyframes swapping-squares-3{
+    50%{
+        transform: translate(-150%,-150%);
+        scale: (2,2);
+        background-color: transparent;
+    }
+}
+
+@keyframes swapping-squares-4{
+    50%{
+        transform: translate(150%,-150%);
+        scale: (2,2);
+        background-color: transparent;
+    }
+    
 }

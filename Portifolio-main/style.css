@@ -666,9 +666,9 @@ footer span a:hover{
 
 .home .home-content:hover .container-negocinho .swapping-squares-spinner .square:nth-child(2),
 .home .home-content:hover .container-negocinho .swapping-squares-spinner .square:nth-child(4){
-    background-color: white;
+    background-color: var(--branquin-nice);
     border: none;
-    transform: rotate(180deg);
+    transform: rotateX(180deg);
 }
 
 .home .container-negocinho .swapping-squares-spinner .square:nth-child(1){
@@ -807,7 +807,7 @@ footer span a:hover{
     justify-content: center;
     text-decoration: none;
     font-size: 20px;
-    color: var(--verde-dcria);
+    color: black;
     border-radius: 50%;
     outline: 2px solid var(--branquin-nice);
     transition-property: outline-offset, outline-color, background-color;
