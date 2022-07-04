@@ -28,11 +28,11 @@
     <?php
         if(isset($_POST['nome']))
         {
-            $nome = mysqli_real_escape_string($conectar,$_POST['nome']);
-            $telefone = mysqli_real_escape_string($conectar,$_POST['telefone']);
-            $email = mysqli_real_escape_string($conectar,$_POST['email']);
-            $senha = mysqli_real_escape_string($conectar,$_POST['senha']);
-            $confirmarSenha = mysqli_real_escape_string($conectar,$_POST['confSenha']);
+            $nome = addslashes($_POST['nome']);
+            $telefone = addslashes($_POST['telefone']);
+            $email = addslashes($_POST['email']);
+            $senha = addslashes($_POST['senha']);
+            $confirmarSenha = addslashes($_POST['confSenha']);
             
             //verificar se todos os campos estão preenchidos
             if(!empty($nome) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($confirmarSenha))

@@ -55,5 +55,6 @@ $(document).ready(function(){
 });
 
 function exibir(){
-    alert('enviado com sucesso');
+    alert('enviado com sucesso')
+;
 }

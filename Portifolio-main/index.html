@@ -49,15 +49,28 @@
                 <a href="#contact">Contratar-me</a>
             </div>
         </div>
+        <div class="container-ft">
+            <img src="image/banner.jpg" alt="">
+        </div>
     </section>
 
     <!--sessão sobre-->
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">Sobre</h2>
+            <!-- <div class="cubo">
+                <div class="cube">
+                    <div>
+                        <span style="--i:0;"></span>
+                        <span style="--i:1;"></span>
+                        <span style="--i:2;"></span>
+                        <span style="--i:3;"></span>
+                    </div>
+                </div>
+            </div> -->
             <div class="about-content">
                 <div class="column left">
-                    <img src="image/img-1.jpg" alt="">
+                    <img src="image/minha ft.jpg" alt="">
                 </div>
                 <div class="column right">
                     <div class="text">Sou Patrik e sou <span class="typing-2"></span></div>
@@ -136,7 +149,6 @@
                         site de inscrições para a primeira edição do Hub Experiencê Day, foi feito com HTML5, CSS3, JavaScript.
                         E um app web para controle de estoque da empresa Jera, foi desenvolvido em HTML5, CSS3, JavaScript e PHP.
                     </p>
-                    <a href="#">Mais informações</a>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -186,37 +198,37 @@
             <div class="carousel owl-carousel ">
                 <div class="card">
                     <div class="box">
-                        <img src="image/img-1.jpg" alt="">
+                        <img src="image/key.jpg" alt="">
                         <div class="text">hub-key</div>
                         <p>Um app desktop para controle de chaves no ambiente escolar do Senac Hub Academy</p>
                     </div>
                 </div>
                 <div class="card">
                 <div class="box">
-                    <img src="image/img-2.jpg" alt="">
+                    <img src="image/jera.jpg" alt="">
                     <div class="text">Jera</div>
                     <p>App Web para gerenciamento de estoque e entrada e saida de brindes e equipamentos</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="image/img-3.jpg" alt="">
-                    <div class="text">Teste</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                    <img src="image/lanche.png" alt="">
+                    <div class="text">LanchApp</div>
+                    <p>App mobile para pequenos comercios de venda de salgados e etc,o app tem venda,registro de produtos,relatórios</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="image/img-4.jpg" alt="">
-                    <div class="text">Teste</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                    <img src="image/lanche.png" alt="">
+                    <div class="text">Web Site Lanchonete</div>
+                    <p>Protótipo de um web app para compra e venda de lanches com niveis de acesso,sendo eles Adiministrador,Gerencia,Consumidor</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img src="image/img-5.jpg" alt="">
-                    <div class="text">Teste</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                    <img src="image/covidzin.jpg" alt="">
+                    <div class="text">Hub Experiencê Day</div>
+                    <p>Web Site para inscrições para a 1°Edição do Hub Experiencê Day, contendo informações sobre os palestrantes e seus respectivos temas</p>
                 </div>
             </div>
             </div>
@@ -229,7 +241,7 @@
             <h2 class="title">Contato</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Fale Conosco</div>
+                    <div class="text">Fale Comigo</div>
                     <p>Entre em contato comigo caso queira um site site personalizado para sua empresa,ou um app que tenha a sua identidade e seu diferencial.</p>
                 
                 <div class="icons">
@@ -258,21 +270,21 @@
             </div><!--column left-->
             <div class="column rigth">
                 <div class="text">Mensagem</div>
-                <form action="#">
+                <form action="./php/envio-email.php" method="post">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" id="nome" placeholder="Nome" required class="input">
+                            <input type="text" name="nome" id="nome" placeholder="Nome" required class="input">
                         </div>
                         <div class="field email">
-                            <input type="email" id="email" placeholder="Email" required class="input">
+                            <input type="email" name="email" id="email" placeholder="Email" required class="input">
                         </div>
                     </div>
                     <div class="field">
-                        <div class="field">
+                        <!-- <div class="field">
                             <input type="text" id="sobrenome" placeholder="Sobrenome" required>
-                        </div>
+                        </div> -->
                         <div class="field textarea">
-                            <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                            <textarea  cols="30" name="mensagem" rows="10" placeholder="Escrever...." required></textarea>
                         </div>
                         <div class="button">
                             <button onclick="exibir()" type="submit">Enviar</button>
@@ -307,7 +319,10 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="Meu-Portif-lio-main\Portifolio-main\particles.js-master\demo\js\app.js"></script>
+    <script src="Meu-Portif-lio-main\Portifolio-main\particles.js-master\particles.min.js"></script>
+    <script src="Meu-Portif-lio-main\Portifolio-main\particles.js-master\particles.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>

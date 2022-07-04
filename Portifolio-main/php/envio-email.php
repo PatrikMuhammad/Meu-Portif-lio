@@ -14,10 +14,11 @@ $arquivo = "
     <p><b>Email: </b>$email</p>
     <p><b>Mensagem: </b>$mensagem</p>
     <p>Este e-mail foi enviado em <b>$data_envio</b>$hora_envio</b></p>
-"
+";
 
 //Destinatario do email
-$destino = '991294627p@gmail.com';
+$enviaremail= '991294627p@gmail.com';
+$destino = $enviaremail;
 $assunto = 'Contato através do Site';
 
 //Esse sempre deverá existir para garantir a exibição correta dos caracteres
@@ -28,6 +29,7 @@ $headers = "From: $nome <$email>";
 //Enviar
 mail($destino, $assunto, $arquivo, $headers);
 
-echo "<meta http-equiv='refresh' content='10;URLMeu-Portif-lio-main\Portifolio-main\index.html'>"; 
+
+// echo "<meta http-equiv='refresh' content='10;http://localhost/Patrik/Portifolio-main/"; 
 
 ?>
